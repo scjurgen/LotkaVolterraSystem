@@ -12,6 +12,9 @@
 {
     LVVECTOR current;
     LVVECTOR next;
+    BOOL createContinuesProblems;
+    NSInteger problemsCreate[2];
+    NSInteger problemsCreateCount[2];
     
     double solveTeam1;
     double solveTeam1of2;
@@ -40,10 +43,13 @@
 
 - (void)setValues:(NSDictionary*)dict
 {
+    createContinuesProblems = YES;
     for (int i=0; i < 2; i++)
     {
-        next.team[i].knowledge = 4.0;
-        next.team[i].problems = 24.0;
+        next.team[i].knowledge = 1.0;
+        next.team[i].problems = 30.0;
+        problemsCreate[i] = 1024;
+        problemsCreateCount[i] = problemsCreate[i];
     }
     solveTeam1 = [dict[@"solveTeam1"] doubleValue];
     solveTeam2 = [dict[@"solveTeam2"] doubleValue];
@@ -78,8 +84,21 @@
 
 - (void)step
 {
+
     for (int i=0; i < 2; i++)
     {
+        if (!createContinuesProblems)
+        {
+            problemsCreateCount[i]--;
+            if (problemsCreateCount[i]<0)
+            {
+                if (next.team[i].problems < 2.0)
+                {
+                    problemsCreateCount[i] = problemsCreate[i];
+                    next.team[i].problems = 30.0;
+                }
+            }
+        }
         current.team[i].knowledge = next.team[i].knowledge;
         current.team[i].problems = next.team[i].problems;
     }
@@ -89,17 +108,22 @@
         - forgetRate1 * current.team[0].knowledge;
     
     next.team[0].problems  = current.team[0].problems
-        - solveTeam1 * next.team[0].knowledge * current.team[0].problems
-        + moreProblemsRate1 * current.team[0].problems;
+    - solveTeam1 * current.team[0].knowledge * current.team[0].problems;
+//        - solveTeam2of1 * current.team[1].knowledge * current.team[1].problems/ 3.0;
+    
+    if (createContinuesProblems)
+            next.team[0].problems += moreProblemsRate1 * current.team[0].problems;
     
     next.team[1].knowledge = current.team[1].knowledge
         + solveTeam2 * current.team[1].knowledge * current.team[1].problems
-        + solveTeam2of1 * current.team[1].knowledge * next.team[1].problems
+        + solveTeam2of1 * current.team[1].knowledge * current.team[1].problems
         - forgetRate2 * current.team[1].knowledge;
     
     next.team[1].problems  = current.team[1].problems
-        - solveTeam2 * next.team[1].knowledge * current.team[1].problems
-        + moreProblemsRate2 * current.team[1].problems;
+    - solveTeam2 * current.team[1].knowledge * current.team[1].problems;
+//        - solveTeam1of2 * current.team[0].knowledge * current.team[0].problems/ 3.0;
+    if (createContinuesProblems)
+        next.team[1].problems  += moreProblemsRate2 * current.team[1].problems;
     
     for (int i=0; i < 2; i++)
     {

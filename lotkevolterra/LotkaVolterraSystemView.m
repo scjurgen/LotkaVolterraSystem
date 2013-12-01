@@ -8,7 +8,7 @@
 
 #import "LotkaVolterraSystemView.h"
 #import "LotkaVolterraModel.h"
-
+#import "FormularWebView.h"
 #include <sys/stat.h>
 
 
@@ -20,18 +20,18 @@
     self = [super init];
     if (self)
     {
-        zoomY = 5.0;
-        zoomX = 5.0;
+        zoomY = 2.0;
+        zoomX = 2.0;
     }
     return self;
 }
 
 - (void)awakeFromNib
 {
-    [_solvingProblems1 setStringValue:@"0.0009"];
+    [_solvingProblems1 setStringValue:@"0.0005"];
     [_solvingProblems2 setStringValue:@"0.0005"];
-    [_helpOtherTeam1 setStringValue:@"0.0004"];
-    [_helpOtherTeam2 setStringValue:@"0.0"];
+    [_helpOtherTeam1 setStringValue:@"0.000"];
+    [_helpOtherTeam2 setStringValue:@"0.000"];
     [_memoryLoss1 setStringValue:@"0.005"];
     [_memoryLoss2 setStringValue:@"0.005"];
     [_problemsRate1 setStringValue:@"0.005"];
@@ -58,12 +58,18 @@
 
 - (void)calculateSystem
 {
+    
     LotkaVolterraModel *lvm = [[LotkaVolterraModel alloc] init];
     NSDictionary *dict=[self getCurrentValuesAsDictionary];
+    [_formularWebView createFormular:dict];
     [lvm setValues:dict];
-
-    //[_remain1Solve setStringValue:[NSString stringWithFormat:@"%f", lvm.solveTeam1]];
-    //[_remain2Solve setStringValue:[NSString stringWithFormat:@"%f", lvm.solveTeam2]];
+    double remain=[_solvingProblems1.stringValue doubleValue]-[_helpOtherTeam1.stringValue doubleValue];
+    [_remain1Solve setStringValue:[NSString stringWithFormat:@"%f", remain]];
+    remain=[_solvingProblems2.stringValue doubleValue]-[_helpOtherTeam2.stringValue doubleValue];
+    [_remain2Solve setStringValue:[NSString stringWithFormat:@"%f", remain]];
+    
+    
+    // TODO: refactor to DrawGraf class
     
     NSImage* anImage = [[NSImage alloc] initWithSize:NSMakeSize(_systemImage.frame.size.width, _systemImage.frame.size.height)];
     [anImage lockFocus];
@@ -161,7 +167,7 @@
     NSString *documentsDir = [paths objectAtIndex:0];
     // need to create the path
     NSString *dbPath = [documentsDir stringByAppendingPathComponent:@"cache"];
-    NSLog(@"%@",dbPath);
+//    NSLog(@"%@",dbPath);
     mkdir([dbPath UTF8String],0755);
     return dbPath;
 }

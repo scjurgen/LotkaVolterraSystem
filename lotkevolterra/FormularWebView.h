@@ -10,4 +10,6 @@
 
 @interface FormularWebView : WebView
 
+- (void)createFormular:(NSDictionary*)dict;
+
 @end

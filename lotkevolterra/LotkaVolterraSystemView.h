@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
+#import "FormularWebView.h"
 
 @interface LotkaVolterraSystemView : NSView
 {
@@ -28,7 +29,7 @@
 @property (weak) IBOutlet NSTextField *memoryLoss2;
 @property (weak) IBOutlet NSTextField *problemsRate2;
 @property (weak) IBOutlet NSTextField *remain2Solve;
-@property (weak) IBOutlet WebView *formularWebView;
+@property (weak) IBOutlet FormularWebView *formularWebView;
 
 - (IBAction)buttonClick:(id)sender;
 

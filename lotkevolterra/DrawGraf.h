@@ -10,4 +10,9 @@
 
 @interface DrawGraf : NSObject
 
+- (void)setPenColors:(NSArray *)penColors;
+- (void)setPenSizes:(NSArray *)penSizes;
+
+
+- (NSImage*)drawGrafs:(CGSize)size;
 @end

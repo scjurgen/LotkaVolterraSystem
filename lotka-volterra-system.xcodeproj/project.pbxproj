@@ -55,18 +55,18 @@
 		38B13600183D4B350029943C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		38B13601183D4B350029943C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		38B13602183D4B350029943C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		38B13605183D4B350029943C /* lotkevolterra-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lotkevolterra-Info.plist"; sourceTree = "<group>"; };
+		38B13605183D4B350029943C /* lotka-volterra-system-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lotka-volterra-system-Info.plist"; sourceTree = "<group>"; };
 		38B13607183D4B350029943C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		38B13609183D4B350029943C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		38B1360B183D4B350029943C /* lotkevolterra-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lotkevolterra-Prefix.pch"; sourceTree = "<group>"; };
+		38B1360B183D4B350029943C /* lotka-volterra-system-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lotka-volterra-system-Prefix.pch"; sourceTree = "<group>"; };
 		38B1360D183D4B350029943C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		38B1360F183D4B350029943C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		38B13610183D4B350029943C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		38B13613183D4B350029943C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		38B13615183D4B350029943C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		38B1361B183D4B350029943C /* lotkevolterraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lotkevolterraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38B1361B183D4B350029943C /* lotka-volterra-systemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lotka-volterra-systemTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B1361C183D4B350029943C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		38B13623183D4B350029943C /* lotkevolterraTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lotkevolterraTests-Info.plist"; sourceTree = "<group>"; };
+		38B13623183D4B350029943C /* lotka-volterra-systemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lotka-volterra-systemTests-Info.plist"; sourceTree = "<group>"; };
 		38B13625183D4B350029943C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		38B13627183D4B350029943C /* lotkevolterraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lotkevolterraTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,8 +96,8 @@
 		38B135F1183D4B350029943C = {
 			isa = PBXGroup;
 			children = (
-				38B13603183D4B350029943C /* lotkevolterra */,
-				38B13621183D4B350029943C /* lotkevolterraTests */,
+				38B13603183D4B350029943C /* lotkavolterra */,
+				38B13621183D4B350029943C /* lotkavolterraTests */,
 				38B135FC183D4B350029943C /* Frameworks */,
 				38B135FB183D4B350029943C /* Products */,
 				28E5FD53184210B9008F3663 /* lotkevolterra copy-Info.plist */,
@@ -108,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				38B135FA183D4B350029943C /* lotka-volterra.app */,
-				38B1361B183D4B350029943C /* lotkevolterraTests.xctest */,
+				38B1361B183D4B350029943C /* lotka-volterra-systemTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		38B13603183D4B350029943C /* lotkevolterra */ = {
+		38B13603183D4B350029943C /* lotkavolterra */ = {
 			isa = PBXGroup;
 			children = (
 				38B13615183D4B350029943C /* Images.xcassets */,
@@ -154,34 +154,36 @@
 				2841A16A184B45BE0069542B /* FormularWebView.h */,
 				2841A16B184B45BE0069542B /* FormularWebView.m */,
 			);
+			name = lotkavolterra;
 			path = lotkevolterra;
 			sourceTree = "<group>";
 		};
 		38B13604183D4B350029943C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				38B13605183D4B350029943C /* lotkevolterra-Info.plist */,
+				38B13605183D4B350029943C /* lotka-volterra-system-Info.plist */,
 				38B13606183D4B350029943C /* InfoPlist.strings */,
 				38B13609183D4B350029943C /* main.m */,
-				38B1360B183D4B350029943C /* lotkevolterra-Prefix.pch */,
+				38B1360B183D4B350029943C /* lotka-volterra-system-Prefix.pch */,
 				38B1360C183D4B350029943C /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		38B13621183D4B350029943C /* lotkevolterraTests */ = {
+		38B13621183D4B350029943C /* lotkavolterraTests */ = {
 			isa = PBXGroup;
 			children = (
 				38B13627183D4B350029943C /* lotkevolterraTests.m */,
 				38B13622183D4B350029943C /* Supporting Files */,
 			);
+			name = lotkavolterraTests;
 			path = lotkevolterraTests;
 			sourceTree = "<group>";
 		};
 		38B13622183D4B350029943C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				38B13623183D4B350029943C /* lotkevolterraTests-Info.plist */,
+				38B13623183D4B350029943C /* lotka-volterra-systemTests-Info.plist */,
 				38B13624183D4B350029943C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -207,9 +209,9 @@
 			productReference = 38B135FA183D4B350029943C /* lotka-volterra.app */;
 			productType = "com.apple.product-type.application";
 		};
-		38B1361A183D4B350029943C /* lotkevolterraTests */ = {
+		38B1361A183D4B350029943C /* lotka-volterra-systemTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38B1362E183D4B350029943C /* Build configuration list for PBXNativeTarget "lotkevolterraTests" */;
+			buildConfigurationList = 38B1362E183D4B350029943C /* Build configuration list for PBXNativeTarget "lotka-volterra-systemTests" */;
 			buildPhases = (
 				38B13617183D4B350029943C /* Sources */,
 				38B13618183D4B350029943C /* Frameworks */,
@@ -220,9 +222,9 @@
 			dependencies = (
 				38B13620183D4B350029943C /* PBXTargetDependency */,
 			);
-			name = lotkevolterraTests;
+			name = "lotka-volterra-systemTests";
 			productName = lotkevolterraTests;
-			productReference = 38B1361B183D4B350029943C /* lotkevolterraTests.xctest */;
+			productReference = 38B1361B183D4B350029943C /* lotka-volterra-systemTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -239,7 +241,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 38B135F5183D4B350029943C /* Build configuration list for PBXProject "lotkevolterra" */;
+			buildConfigurationList = 38B135F5183D4B350029943C /* Build configuration list for PBXProject "lotka-volterra-system" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -253,7 +255,7 @@
 			projectRoot = "";
 			targets = (
 				38B135F9183D4B350029943C /* lotka-volterra */,
-				38B1361A183D4B350029943C /* lotkevolterraTests */,
+				38B1361A183D4B350029943C /* lotka-volterra-systemTests */,
 			);
 		};
 /* End PBXProject section */
@@ -423,8 +425,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "lotkevolterra/lotkevolterra-Prefix.pch";
-				INFOPLIST_FILE = "lotkevolterra/lotkevolterra-Info.plist";
+				GCC_PREFIX_HEADER = "lotkevolterra/lotka-volterra-system-Prefix.pch";
+				INFOPLIST_FILE = "lotkevolterra/lotka-volterra-system-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -436,8 +438,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "lotkevolterra/lotkevolterra-Prefix.pch";
-				INFOPLIST_FILE = "lotkevolterra/lotkevolterra-Info.plist";
+				GCC_PREFIX_HEADER = "lotkevolterra/lotka-volterra-system-Prefix.pch";
+				INFOPLIST_FILE = "lotkevolterra/lotka-volterra-system-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -458,8 +460,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "lotkevolterraTests/lotkevolterraTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "lotkevolterraTests/lotka-volterra-systemTests-Info.plist";
+				PRODUCT_NAME = "lotka-volterra-systemTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -476,8 +478,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lotkevolterra/lotkevolterra-Prefix.pch";
-				INFOPLIST_FILE = "lotkevolterraTests/lotkevolterraTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "lotkevolterraTests/lotka-volterra-systemTests-Info.plist";
+				PRODUCT_NAME = "lotka-volterra-systemTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -486,7 +488,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38B135F5183D4B350029943C /* Build configuration list for PBXProject "lotkevolterra" */ = {
+		38B135F5183D4B350029943C /* Build configuration list for PBXProject "lotka-volterra-system" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38B13629183D4B350029943C /* Debug */,
@@ -504,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38B1362E183D4B350029943C /* Build configuration list for PBXNativeTarget "lotkevolterraTests" */ = {
+		38B1362E183D4B350029943C /* Build configuration list for PBXNativeTarget "lotka-volterra-systemTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38B1362F183D4B350029943C /* Debug */,
