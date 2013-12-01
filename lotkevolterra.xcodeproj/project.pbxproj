@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2841A15F1849EF5F0069542B /* LotkaVolterraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2841A15E1849EF5F0069542B /* LotkaVolterraModel.m */; };
+		2841A162184A5BF50069542B /* DrawGraf.m in Sources */ = {isa = PBXBuildFile; fileRef = 2841A161184A5BF50069542B /* DrawGraf.m */; };
+		2841A165184A6EBC0069542B /* LVTimeSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 2841A164184A6EBC0069542B /* LVTimeSeries.m */; };
+		2841A168184B38900069542B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2841A167184B38900069542B /* WebKit.framework */; };
+		2841A16C184B45BE0069542B /* FormularWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2841A16B184B45BE0069542B /* FormularWebView.m */; };
+		28E5FD4218409C83008F3663 /* LotkaVolterraSystemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E5FD4118409C83008F3663 /* LotkaVolterraSystemView.m */; };
 		38B135FE183D4B350029943C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B135FD183D4B350029943C /* Cocoa.framework */; };
 		38B13608183D4B350029943C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38B13606183D4B350029943C /* InfoPlist.strings */; };
 		38B1360A183D4B350029943C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B13609183D4B350029943C /* main.m */; };
@@ -31,7 +37,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		38B135FA183D4B350029943C /* lotkevolterra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lotkevolterra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2841A15D1849EF5F0069542B /* LotkaVolterraModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotkaVolterraModel.h; sourceTree = "<group>"; };
+		2841A15E1849EF5F0069542B /* LotkaVolterraModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotkaVolterraModel.m; sourceTree = "<group>"; };
+		2841A160184A5BF50069542B /* DrawGraf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawGraf.h; sourceTree = "<group>"; };
+		2841A161184A5BF50069542B /* DrawGraf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawGraf.m; sourceTree = "<group>"; };
+		2841A163184A6EBC0069542B /* LVTimeSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVTimeSeries.h; sourceTree = "<group>"; };
+		2841A164184A6EBC0069542B /* LVTimeSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVTimeSeries.m; sourceTree = "<group>"; };
+		2841A166184A6F3E0069542B /* LotkaVolterraDatatypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LotkaVolterraDatatypes.h; sourceTree = "<group>"; };
+		2841A167184B38900069542B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		2841A16A184B45BE0069542B /* FormularWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormularWebView.h; sourceTree = "<group>"; };
+		2841A16B184B45BE0069542B /* FormularWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormularWebView.m; sourceTree = "<group>"; };
+		28E5FD4018409C83008F3663 /* LotkaVolterraSystemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotkaVolterraSystemView.h; sourceTree = "<group>"; };
+		28E5FD4118409C83008F3663 /* LotkaVolterraSystemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotkaVolterraSystemView.m; sourceTree = "<group>"; };
+		28E5FD53184210B9008F3663 /* lotkevolterra copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "lotkevolterra copy-Info.plist"; path = "/Users/jschwiet/Desktop/lotka-volterra/lotkevolterra copy-Info.plist"; sourceTree = "<absolute>"; };
+		38B135FA183D4B350029943C /* lotka-volterra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lotka-volterra.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B135FD183D4B350029943C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		38B13600183D4B350029943C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		38B13601183D4B350029943C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -57,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2841A168184B38900069542B /* WebKit.framework in Frameworks */,
 				38B135FE183D4B350029943C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,13 +100,14 @@
 				38B13621183D4B350029943C /* lotkevolterraTests */,
 				38B135FC183D4B350029943C /* Frameworks */,
 				38B135FB183D4B350029943C /* Products */,
+				28E5FD53184210B9008F3663 /* lotkevolterra copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		38B135FB183D4B350029943C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				38B135FA183D4B350029943C /* lotkevolterra.app */,
+				38B135FA183D4B350029943C /* lotka-volterra.app */,
 				38B1361B183D4B350029943C /* lotkevolterraTests.xctest */,
 			);
 			name = Products;
@@ -95,6 +116,7 @@
 		38B135FC183D4B350029943C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2841A167184B38900069542B /* WebKit.framework */,
 				38B135FD183D4B350029943C /* Cocoa.framework */,
 				38B1361C183D4B350029943C /* XCTest.framework */,
 				38B135FF183D4B350029943C /* Other Frameworks */,
@@ -115,11 +137,22 @@
 		38B13603183D4B350029943C /* lotkevolterra */ = {
 			isa = PBXGroup;
 			children = (
-				38B1360F183D4B350029943C /* AppDelegate.h */,
-				38B13610183D4B350029943C /* AppDelegate.m */,
-				38B13612183D4B350029943C /* MainMenu.xib */,
 				38B13615183D4B350029943C /* Images.xcassets */,
 				38B13604183D4B350029943C /* Supporting Files */,
+				38B1360F183D4B350029943C /* AppDelegate.h */,
+				38B13610183D4B350029943C /* AppDelegate.m */,
+				2841A160184A5BF50069542B /* DrawGraf.h */,
+				2841A161184A5BF50069542B /* DrawGraf.m */,
+				38B13612183D4B350029943C /* MainMenu.xib */,
+				28E5FD4018409C83008F3663 /* LotkaVolterraSystemView.h */,
+				28E5FD4118409C83008F3663 /* LotkaVolterraSystemView.m */,
+				2841A15D1849EF5F0069542B /* LotkaVolterraModel.h */,
+				2841A15E1849EF5F0069542B /* LotkaVolterraModel.m */,
+				2841A163184A6EBC0069542B /* LVTimeSeries.h */,
+				2841A164184A6EBC0069542B /* LVTimeSeries.m */,
+				2841A166184A6F3E0069542B /* LotkaVolterraDatatypes.h */,
+				2841A16A184B45BE0069542B /* FormularWebView.h */,
+				2841A16B184B45BE0069542B /* FormularWebView.m */,
 			);
 			path = lotkevolterra;
 			sourceTree = "<group>";
@@ -157,9 +190,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		38B135F9183D4B350029943C /* lotkevolterra */ = {
+		38B135F9183D4B350029943C /* lotka-volterra */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38B1362B183D4B350029943C /* Build configuration list for PBXNativeTarget "lotkevolterra" */;
+			buildConfigurationList = 38B1362B183D4B350029943C /* Build configuration list for PBXNativeTarget "lotka-volterra" */;
 			buildPhases = (
 				38B135F6183D4B350029943C /* Sources */,
 				38B135F7183D4B350029943C /* Frameworks */,
@@ -169,9 +202,9 @@
 			);
 			dependencies = (
 			);
-			name = lotkevolterra;
+			name = "lotka-volterra";
 			productName = lotkevolterra;
-			productReference = 38B135FA183D4B350029943C /* lotkevolterra.app */;
+			productReference = 38B135FA183D4B350029943C /* lotka-volterra.app */;
 			productType = "com.apple.product-type.application";
 		};
 		38B1361A183D4B350029943C /* lotkevolterraTests */ = {
@@ -219,7 +252,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				38B135F9183D4B350029943C /* lotkevolterra */,
+				38B135F9183D4B350029943C /* lotka-volterra */,
 				38B1361A183D4B350029943C /* lotkevolterraTests */,
 			);
 		};
@@ -252,8 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E5FD4218409C83008F3663 /* LotkaVolterraSystemView.m in Sources */,
+				2841A165184A6EBC0069542B /* LVTimeSeries.m in Sources */,
 				38B13611183D4B350029943C /* AppDelegate.m in Sources */,
+				2841A15F1849EF5F0069542B /* LotkaVolterraModel.m in Sources */,
 				38B1360A183D4B350029943C /* main.m in Sources */,
+				2841A16C184B45BE0069542B /* FormularWebView.m in Sources */,
+				2841A162184A5BF50069542B /* DrawGraf.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +308,7 @@
 /* Begin PBXTargetDependency section */
 		38B13620183D4B350029943C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 38B135F9183D4B350029943C /* lotkevolterra */;
+			target = 38B135F9183D4B350029943C /* lotka-volterra */;
 			targetProxy = 38B1361F183D4B350029943C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -457,13 +495,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38B1362B183D4B350029943C /* Build configuration list for PBXNativeTarget "lotkevolterra" */ = {
+		38B1362B183D4B350029943C /* Build configuration list for PBXNativeTarget "lotka-volterra" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38B1362C183D4B350029943C /* Debug */,
 				38B1362D183D4B350029943C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38B1362E183D4B350029943C /* Build configuration list for PBXNativeTarget "lotkevolterraTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +511,7 @@
 				38B13630183D4B350029943C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

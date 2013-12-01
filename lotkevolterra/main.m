@@ -1,6 +1,6 @@
 //
 //  main.m
-//  lotkevolterra
+//  lotkavolterra
 //
 //  Created by jay on 20/11/13.
 //  Copyright (c) 2013 Jurgen Schwietering. All rights reserved.

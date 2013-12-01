@@ -1,6 +1,6 @@
 //
-//  lotkevolterraTests.m
-//  lotkevolterraTests
+//  lotkavolterraTests.m
+//  lotkavolterraTests
 //
 //  Created by jay on 20/11/13.
 //  Copyright (c) 2013 Jurgen Schwietering. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface lotkevolterraTests : XCTestCase
+@interface lotkavolterraTests : XCTestCase
 
 @end
 
-@implementation lotkevolterraTests
+@implementation lotkavolterraTests
 
 - (void)setUp
 {
